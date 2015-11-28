@@ -6,15 +6,20 @@ import './PortfolioModals.scss'
 export default class PortfolioModals extends Component {
   render() {
     const portfolioModals = []
-    for (var portfolioModal in this.props.items) {
+    this.props.items.forEach( (portfolioModal, ind) => {
       portfolioModals.push(
-        <PortfolioModal data={portfolioModal}/>
+        <PortfolioModal key={'portfolio-modal-' + ind} data={portfolioModal}/>
       )
-    }
+    })
+
     return (
       <div className="portfolio-modals">
         {portfolioModals}
       </div>
     )
   }
+}
+
+PortfolioModals.propTypes = {
+  items: React.PropTypes.array
 }

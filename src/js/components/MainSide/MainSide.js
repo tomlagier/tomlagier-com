@@ -7,9 +7,9 @@ export default class MainSide extends Component {
   render() {
     const links = []
 
-    for(var link in this.props.links) {
-      links.push(<Link data={link} />)
-    }
+    this.props.links.forEach( (link, ind) => {
+      links.push(<Link key={'link-' + ind} data={link} />)
+    })
 
     return (
       <div className="main-side">
@@ -25,4 +25,8 @@ export default class MainSide extends Component {
       </div>
     )
   }
+}
+
+MainSide.propTypes = {
+  links: React.PropTypes.array
 }

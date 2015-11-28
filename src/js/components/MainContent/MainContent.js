@@ -20,3 +20,10 @@ export default class MainContent extends Component {
     )
   }
 }
+
+MainContent.propTypes = {
+  content: React.PropTypes.shape({
+    links: React.PropTypes.array,
+    portfolioItems: React.PropTypes.array
+  })
+}

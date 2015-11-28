@@ -15,3 +15,14 @@ export default class PortfolioItem extends Component {
     )
   }
 }
+
+PortfolioItem.propTypes = {
+  data: React.PropTypes.shape({
+    img: React.PropTypes.string,
+    thumbnail: React.PropTypes.string,
+    heading: React.PropTypes.string,
+    description: React.PropTypes.string,
+    link: React.PropTypes.string,
+    linkText: React.PropTypes.string
+  })
+}
