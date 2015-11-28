@@ -4,6 +4,21 @@
       "className": "portfolio",
       "link": "#",
       "text": "Portfolio"
+    },
+    {
+      "className": "github",
+      "link": "https://github.com/tomlagier",
+      "text": "GitHub"
+    },
+    {
+      "className": "linkedin",
+      "link": "https://www.linkedin.com/in/thomaslagier",
+      "text": "LinkedIn"
+    },
+    {
+      "className": "twitter",
+      "link": "https://twitter.com/LagierGear",
+      "text": "Twitter"
     }
   ],
   "portfolioItems": [

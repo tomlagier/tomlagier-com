@@ -1,9 +1,12 @@
 import React, { Component, propTypes } from 'react'
+import store from '../../store'
 
 import './Link.scss'
 
-function portfolioFlip() {
-  console.log('flipped!')
+function portfolioFlip(evt) {
+  store.dispatch({
+    type: 'TOGGLE_PORTFOLIO'
+  })
 }
 
 export default class Link extends Component {

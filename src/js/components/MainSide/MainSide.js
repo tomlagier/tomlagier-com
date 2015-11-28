@@ -1,5 +1,5 @@
 import React, { Component, propTypes } from 'react'
-import Link from '../Link';
+import Link from '../Link'
 
 import './MainSide.scss'
 
