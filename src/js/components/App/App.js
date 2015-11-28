@@ -1,15 +1,14 @@
 import React, { Component, propTypes } from 'react'
-import Counter from 'components/Counter'
-import * as colors from './colors'
+import MainContent from '../MainContent'
+import content from '../../data/content.json'
 
 import './App.scss'
 
-export default class App {
+export default class App extends Component {
   render() {
     return (
-      <div>
-        <Counter increment={1} color={colors.COUNTER_COLOR} />
-        <Counter increment={10} color={colors.COUNTER_COLOR_ALT} />
+      <div className="container">
+        <MainContent content={content} />
       </div>
     )
   }
