@@ -22,4 +22,12 @@ function select(state) {
   }
 }
 
+App.propTypes = {
+  currentState: React.PropTypes.shape({
+    contentActivated: React.PropTypes.bool,
+    portfolioVisible: React.PropTypes.bool,
+    currentModal: React.PropTypes.number
+  }).isRequired
+}
+
 export default connect(select)(App)

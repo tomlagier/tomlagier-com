@@ -23,5 +23,5 @@ Link.propTypes = {
     className: React.PropTypes.string,
     link: React.PropTypes.string,
     text: React.PropTypes.string
-  })
+  }).isRequired
 }

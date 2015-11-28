@@ -11,14 +11,14 @@ function updateState(state = initialState, action) {
       localState.portfolioVisible = !state.portfolioVisible
       return localState
     case 'TOGGLE_MODAL':
-      if (state.modalVisible) {
-        localState.modalVisible = null
+      if (localState.currentModal >= 0) {
+        localState.currentModal = -1
       } else {
-        localState.modalVisible = action.modal
+        localState.currentModal = action.modal
       }
       return localState
     case 'ACTIVATE_CONTENT':
-      localState.portfolioVisible = !state.portfolioVisible
+      localState.contentActivated = !state.contentActivated
       return localState
     default:
       return localState

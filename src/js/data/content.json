@@ -25,10 +25,10 @@
     {
       "img": "",
       "thumbnail": "",
-      "heading": "",
-      "description": "",
-      "link": "",
-      "linkText": ""
+      "heading": "My First Project",
+      "description": "First project description goes here",
+      "link": "#",
+      "linkText": "Some link text"
     }
   ]
 }

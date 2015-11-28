@@ -28,5 +28,5 @@ export default class MainSide extends Component {
 }
 
 MainSide.propTypes = {
-  links: React.PropTypes.array
+  links: React.PropTypes.array.isRequired
 }

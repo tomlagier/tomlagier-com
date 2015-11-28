@@ -8,7 +8,7 @@ export default class PortfolioArea extends Component {
     const portfolioItems = []
     this.props.items.forEach( (portfolioItem, ind) => {
       portfolioItems.push(
-        <PortfolioItem key={'portfolio-item' + ind} data={portfolioItem}/>
+        <PortfolioItem key={'portfolio-item' + ind} data={portfolioItem} index={ind}/>
       )
     })
 
@@ -21,5 +21,5 @@ export default class PortfolioArea extends Component {
 }
 
 PortfolioArea.propTypes = {
-  items: React.PropTypes.array
+  items: React.PropTypes.array.isRequired
 }

@@ -1,0 +1,31 @@
+$border-color: #EDEDED;
+$shadow-color: rgba(0,0,0,0.1);
+
+.content {
+  max-width: 580px;
+  padding: 40px 60px 60px;
+  position: relative;
+  margin: 40px auto;
+  border: 1px solid $border-color;
+  box-shadow: 0 0 12px 0 $shadow-color;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+
+  &.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile-image-wrapper {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100%;
+
+  img {
+    max-width: 100%;
+  }
+}

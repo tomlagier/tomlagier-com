@@ -1,5 +1,5 @@
 {
   "contentActivated": false,
   "portfolioVisible" : false,
-  "modalVisible": null
+  "currentModal": -1
 }

@@ -4,8 +4,10 @@ import './PortfolioModal.scss'
 
 export default class PortfolioModal extends Component {
   render() {
+    let className = (this.props.activeModal === this.props.index) ? 'active' : ''
+
     return (
-      <div className="portfolio-modal"f>
+      <div className={'portfolio-modal ' + className} data-index={this.props.index}>
         <div className="closeButton"></div>
         <div className="image-wrapper">
           <img src={this.props.data.img} />
@@ -26,5 +28,7 @@ PortfolioModal.propTypes = {
     description: React.PropTypes.string,
     link: React.PropTypes.string,
     linkText: React.PropTypes.string
-  })
+  }).isRequired,
+  index: React.PropTypes.number.isRequired,
+  activeModal: React.PropTypes.number.isRequired
 }

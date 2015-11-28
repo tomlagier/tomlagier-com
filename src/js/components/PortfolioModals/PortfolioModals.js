@@ -8,7 +8,7 @@ export default class PortfolioModals extends Component {
     const portfolioModals = []
     this.props.items.forEach( (portfolioModal, ind) => {
       portfolioModals.push(
-        <PortfolioModal key={'portfolio-modal-' + ind} data={portfolioModal}/>
+        <PortfolioModal key={'portfolio-modal-' + ind} data={portfolioModal} index={ind} activeModal={this.props.activeModal}/>
       )
     })
 
@@ -21,5 +21,5 @@ export default class PortfolioModals extends Component {
 }
 
 PortfolioModals.propTypes = {
-  items: React.PropTypes.array
+  items: React.PropTypes.array.isRequired
 }
