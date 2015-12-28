@@ -26,6 +26,7 @@ App.propTypes = {
   currentState: React.PropTypes.shape({
     contentActivated: React.PropTypes.bool,
     portfolioVisible: React.PropTypes.bool,
+    portfolioTriggered: React.PropTypes.bool,
     currentModal: React.PropTypes.number
   }).isRequired
 }

@@ -17,8 +17,9 @@ export default class MainSide extends Component {
           <img src="assets/images/profile-picture.jpg" />
         </div>
         <h1>Tom Lagier</h1>
-        <h2>Front-End Developer</h2>
-        <p>I am a driven and self-motivated web developer, working at intersection of art and computer science. I love all aspects of design and am happiest when I am making beautiful web-based applications. I have a hunger to use new tools and technology to produce engaging interactive experiences that impress and delight.</p>
+        <h2>Javascript & Front-End Developer</h2>
+        <p>I'm a Javascript developer with a passion for next-generation web technologies. I love all elements of interaction design and spend my free time working on projects that leverage WebGL, Canvas, SVG, and video to make the web come alive.</p>
+        <p>I'm always looking for exciting opportunities to build beautiful, interactive pages and applications.</p>
         <div className="links">
           {links}
         </div>

@@ -1,3 +1,21 @@
-@keyframes paperFall {
-  
+@keyframes signSwing {
+  0% {
+    transform: rotateX(-90deg);
+  }
+
+  40% {
+    transform: rotateX(0deg);
+  }
+
+  60% {
+    transform: rotateX(20deg);
+  }
+
+  80% {
+    transform: rotateX(-15deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
 }

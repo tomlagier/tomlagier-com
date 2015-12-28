@@ -1,28 +1,57 @@
 {
   "links": [
     {
-      "className": "portfolio",
+      "className": "portfolio icon-filing",
       "link": "#",
       "text": "Portfolio"
     },
     {
-      "className": "github",
+      "className": "email icon-ios-email",
+      "link": "mailto:tom@tomlagier.com",
+      "text": "Email"
+    },
+    {
+      "className": "github icon-social-octocat",
       "link": "https://github.com/tomlagier",
       "text": "GitHub"
     },
     {
-      "className": "linkedin",
+      "className": "linkedin icon-social-linkedin",
       "link": "https://www.linkedin.com/in/thomaslagier",
       "text": "LinkedIn"
     },
     {
-      "className": "twitter",
+      "className": "twitter icon-social-twitter",
       "link": "https://twitter.com/LagierGear",
       "text": "Twitter"
     }
   ],
   "portfolioItems": [
     {
+      "img": "",
+      "thumbnail": "",
+      "heading": "My First Project",
+      "description": "First project description goes here",
+      "link": "#",
+      "linkText": "Some link text"
+    },
+    {
+      "img": "",
+      "thumbnail": "",
+      "heading": "My First Project",
+      "description": "First project description goes here",
+      "link": "#",
+      "linkText": "Some link text"
+    },
+    {
+      "img": "",
+      "thumbnail": "",
+      "heading": "My First Project",
+      "description": "First project description goes here",
+      "link": "#",
+      "linkText": "Some link text"
+    }
+    ,{
       "img": "",
       "thumbnail": "",
       "heading": "My First Project",

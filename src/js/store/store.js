@@ -9,6 +9,7 @@ function updateState(state = initialState, action) {
   switch (action.type) {
     case 'TOGGLE_PORTFOLIO':
       localState.portfolioVisible = !state.portfolioVisible
+      localState.portfolioTriggered = true
       return localState
     case 'TOGGLE_MODAL':
       if (localState.currentModal >= 0) {

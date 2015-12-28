@@ -1,7 +1,6 @@
 import React, { Component, propTypes } from 'react'
 import MainSide from '../MainSide'
 import PortfolioSide from '../PortfolioSide'
-import PortfolioArea from '../PortfolioArea'
 import PortfolioModals from '../PortfolioModals'
 import store from '../../store'
 
@@ -19,17 +18,20 @@ export default class MainContent extends Component {
 
   render() {
 
+    console.log(this.props.currentState)
+
     let flipperState = this.props.currentState.portfolioVisible ? 'portfolio-side-visible' : 'main-side-visible'
+
+    let portfolioWasShown = this.props.currentState.portfolioTriggered ? ' portfolio-triggered' : ''
 
     let contentState = this.props.currentState.contentActivated ? 'visible' : ''
 
     return (
-      <div className={'content ' + contentState}>
+      <div className={'content ' + contentState + portfolioWasShown}>
         <div className={'flipcard-wrapper ' + flipperState}>
           <MainSide links={this.props.content.links}/>
-          <PortfolioSide />
+          <PortfolioSide content={this.props.content.portfolioItems}/>
         </div>
-        <PortfolioArea items={this.props.content.portfolioItems}/>
         <PortfolioModals items={this.props.content.portfolioItems} activeModal={this.props.currentState.currentModal} />
       </div>
     )
@@ -44,6 +46,7 @@ MainContent.propTypes = {
   currentState: React.PropTypes.shape({
     contentActivated: React.PropTypes.bool,
     portfolioVisible: React.PropTypes.bool,
+    portfolioTriggered: React.PropTypes.bool,
     currentModal: React.PropTypes.number
   }).isRequired
 }

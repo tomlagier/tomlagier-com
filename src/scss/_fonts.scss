@@ -1,0 +1,20 @@
+@mixin font($weight:400) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+}
+
+h1, {
+  @include font(900);
+}
+
+h2, h3, h4, h5, h6 {
+  @include font(700);
+}
+
+div, span, p {
+  @include font(300);
+}
+
+b, bold, strong {
+  @include font(700);
+}

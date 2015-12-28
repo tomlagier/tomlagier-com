@@ -6,7 +6,7 @@ import './PortfolioItem.scss'
 export default class PortfolioItem extends Component {
   render() {
     let toggleModal = (evt) => {
-      const index = parseInt(evt.currentTarget.getAttribute('data-index'))
+      const index = parseInt(evt.currentTarget.getAttribute('data-index'), 10)
 
       store.dispatch({
         type: 'TOGGLE_MODAL',
@@ -14,13 +14,19 @@ export default class PortfolioItem extends Component {
       })
     }
 
+    let animDelay = 500 + (this.props.index) * 400
+
     let style = {
-      backgroundImage: this.props.data.thumbnail
+      backgroundImage: this.props.data.thumbnail,
+      transition: `opacity 0.3s ${animDelay}ms ease-out`,
+      animationDelay: `${animDelay}ms`
     }
 
     return (
-      <div className="portfolio-item" style={style} onClick={toggleModal} data-index={this.props.index}>
-        <h3>{this.props.data.heading}</h3>
+      <div className="portfolio-item-outer">
+        <div className="portfolio-item" style={style} onClick={toggleModal} data-index={this.props.index}>
+          <h4>{this.props.data.heading}</h4>
+        </div>
       </div>
     )
   }

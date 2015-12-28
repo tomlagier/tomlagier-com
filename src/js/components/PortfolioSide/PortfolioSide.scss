@@ -1,3 +1,15 @@
 .portfolio-side {
-  display: none;
+  .back-button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: lighten(black, 30%);
+    }
+  }
 }
