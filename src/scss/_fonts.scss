@@ -18,3 +18,8 @@ div, span, p {
 b, bold, strong {
   @include font(700);
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}

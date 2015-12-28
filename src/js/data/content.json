@@ -29,35 +29,48 @@
   "portfolioItems": [
     {
       "img": "",
-      "thumbnail": "",
-      "heading": "My First Project",
-      "description": "First project description goes here",
+      "thumbnail": "url(/assets/images/thumbnails/vidsketch-thumbnail.png)",
+      "heading": "VidSketch",
+      "description": "Rubics cube full description here",
       "link": "#",
-      "linkText": "Some link text"
+      "linkText": "Some link text",
+      "className": "vidsketch"
     },
     {
       "img": "",
-      "thumbnail": "",
-      "heading": "My First Project",
+      "thumbnail": "url(/assets/images/thumbnails/rubics-thumbnail.jpg)",
+      "heading": "Rubics Cube",
       "description": "First project description goes here",
       "link": "#",
-      "linkText": "Some link text"
+      "linkText": "Some link text",
+      "className": "rubics"
     },
     {
       "img": "",
-      "thumbnail": "",
-      "heading": "My First Project",
+      "thumbnail": "url(/assets/images/thumbnails/torrentula-thumbnail.png)",
+      "heading": "Torrentula",
       "description": "First project description goes here",
       "link": "#",
-      "linkText": "Some link text"
+      "linkText": "Some link text",
+      "className": "torrentula"
+    },
+    {
+      "img": "",
+      "thumbnail": "url(/assets/images/thumbnails/linkbee-thumbnail.png)",
+      "heading": "LinkBee",
+      "description": "First project description goes here",
+      "link": "#",
+      "linkText": "Some link text",
+      "className": "linkbee"
     }
     ,{
       "img": "",
-      "thumbnail": "",
-      "heading": "My First Project",
+      "thumbnail": "url(/assets/images/thumbnails/road-trip-thumbnail.png)",
+      "heading": "ALDI Road Trip",
       "description": "First project description goes here",
       "link": "#",
-      "linkText": "Some link text"
+      "linkText": "Some link text",
+      "className": "aldi"
     }
   ]
 }

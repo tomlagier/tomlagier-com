@@ -1,0 +1,19 @@
+// Size of div based on the ratio of image
+@mixin panel-size($width, $height) {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+
+  &:after {
+    padding-top: $height / $width * 100%;
+    content: '';
+    display: block;
+  }
+}
+
+@mixin clear-panel-size() {
+  &:after {
+    padding-top: 0;
+  }
+}

@@ -1,14 +1,27 @@
+@import 'mixins';
+
 .portfolio-item-outer {
+  @include panel-size(1, 1);
   perspective: 600;
   font-size: 16px;
-  width: 50%;
+  width: calc(33% - 10px);
   display: inline-block;
-  height: 100px;
-  padding: 15px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+
+  &:nth-child(3n-1) {
+    margin-right: 0;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+    margin-left: 15px;
+  }
 }
 
 .portfolio-item {
-  border: 1px solid black;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
   transform-origin: center top;
   opacity: 0;
   animation-play-state: paused;
@@ -17,9 +30,60 @@
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   backface-visibility: hidden;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   .portfolio-triggered & {
     animation-play-state: running;
     opacity: 1;
+  }
+
+  h4 {
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    bottom: 0;
+    transition: background 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 0;
+  }
+
+  &:hover {
+    h4 {
+      background: rgba(0,0,0,0.9);
+    }
+  }
+
+  .vidsketch & {
+    background-position-y: 23%;
+    background-size: 70%;
+  }
+
+  .rubics & {
+    background-position-y: -41%;
+  }
+
+  .torrentula & {
+    background-size: 60%;
+    background-position-y: 10%
+  }
+
+  .linkbee & {
+    background-size: 50%;
+    background-position-y: 11%;
+  }
+
+  .aldi & {
+    background-size: 44%;
+    background-position-y: 11%;
   }
 }

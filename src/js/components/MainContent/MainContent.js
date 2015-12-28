@@ -18,8 +18,6 @@ export default class MainContent extends Component {
 
   render() {
 
-    console.log(this.props.currentState)
-
     let flipperState = this.props.currentState.portfolioVisible ? 'portfolio-side-visible' : 'main-side-visible'
 
     let portfolioWasShown = this.props.currentState.portfolioTriggered ? ' portfolio-triggered' : ''

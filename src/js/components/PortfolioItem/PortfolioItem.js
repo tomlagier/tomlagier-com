@@ -23,7 +23,7 @@ export default class PortfolioItem extends Component {
     }
 
     return (
-      <div className="portfolio-item-outer">
+      <div className={'portfolio-item-outer ' + this.props.data.className}>
         <div className="portfolio-item" style={style} onClick={toggleModal} data-index={this.props.index}>
           <h4>{this.props.data.heading}</h4>
         </div>
@@ -39,7 +39,8 @@ PortfolioItem.propTypes = {
     heading: React.PropTypes.string,
     description: React.PropTypes.string,
     link: React.PropTypes.string,
-    linkText: React.PropTypes.string
+    linkText: React.PropTypes.string,
+    className: React.PropTypes.string
   }).isRequired,
   index: React.PropTypes.number.isRequired
 }
