@@ -14,7 +14,7 @@ export default class PortfolioItem extends Component {
       })
     }
 
-    let animDelay = 500 + (this.props.index) * 400
+    let animDelay = 500 + (this.props.index) * 500
 
     let style = {
       backgroundImage: this.props.data.thumbnail,
@@ -40,7 +40,7 @@ PortfolioItem.propTypes = {
     description: React.PropTypes.string,
     link: React.PropTypes.string,
     linkText: React.PropTypes.string,
-    className: React.PropTypes.string
+    className: React.PropTypes.strng
   }).isRequired,
   index: React.PropTypes.number.isRequired
 }

@@ -3,18 +3,22 @@ $shadow-color: rgba(0,0,0,0.1);
 
 .content {
   max-width: 580px;
-  position: relative;
-  margin: 40px auto;
+  margin: 0 auto;
   opacity: 0;
-  transform: translate3d(0, -10%, 0);
+  transform: translate3d(-50%, -65%, 0);
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
   perspective: 2000;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
 
   &.visible {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(-50%, -55%, 0);
     opacity: 1;
   }
+
 }
 
 .profile-image-wrapper {
@@ -23,9 +27,25 @@ $shadow-color: rgba(0,0,0,0.1);
   margin: 0 auto;
   overflow: hidden;
   border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.2s 0.4s ease-out;
+  transform: translate3d(0,0,0);
+  animation-delay: 0.4s;
+  animation-name: fallDown;
+  animation-duration: 0.5s;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 
   img {
     max-width: 100%;
+  }
+
+  .visible & {
+    transform: scale(1);
+    opacity: 1;
+    animation-play-state: running;
   }
 }
 

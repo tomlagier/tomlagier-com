@@ -1,15 +1,70 @@
+@import 'colors';
+
 .main-side {
   h1 {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    transition: opacity 0.5s 0.9s ease-out, transform 0.5s 0.9s ease-out;
+    opacity: 0;
+    transform: translateX(5%);
+
+    .visible & {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   h2 {
-    margin-top: 10px;
+    margin-top: 0;
     font-size: 1.3em;
+    color: $green;
+    opacity: 0;
+    transition: opacity 0.5s 1.4s ease-out, transform 0.5s 1.4s ease-out;
+    transform: translateX(-5%);
+
+    .visible & {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  p {
+    &:nth-of-type(1) {
+      opacity: 0;
+      transition: opacity 0.5s 1.9s ease-out;
+
+      .visible & {
+        opacity: 1;
+      }
+    }
+
+    &:nth-of-type(2) {
+      opacity: 0;
+      transition: opacity 0.5s 1.9s ease-out;
+
+      .visible & {
+        opacity: 1;
+      }
+    }
   }
 
   .links {
     margin-top: 30px;
     margin-bottom: 0;
+    transition: opacity 0.5s 1.9s ease-out;
+    opacity: 0;
+
+    .visible & {
+      opacity: 1;
+    }
+  }
+
+  a.portfolio-link {
+    color: $green;
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: darken($green, 15%);
+    }
   }
 }
