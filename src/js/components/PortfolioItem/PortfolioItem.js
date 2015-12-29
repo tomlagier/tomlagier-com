@@ -14,7 +14,7 @@ export default class PortfolioItem extends Component {
       })
     }
 
-    let animDelay = 500 + (this.props.index) * 150
+    let animDelay = 1600 + (this.props.index) * 150
 
     let style = {
       backgroundImage: `url(${this.props.data.thumbnail})`,
