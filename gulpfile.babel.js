@@ -9,7 +9,7 @@ import eslint from 'gulp-eslint'
 import webpack from 'webpack'
 import WebpackServer from 'webpack-hot-server'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
- 
+
 const {
   NODE_ENV = 'development',
   HOST = 'localhost',
