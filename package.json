@@ -6,8 +6,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "start": "gulp dev",
-    "build": "set NODE_ENV=production && gulp",
-    "prodtest": "set NODE_ENV=production && gulp dev"
+    "build": "export NODE_ENV=production && gulp",
+    "prodtest": "export NODE_ENV=production && gulp dev"
   },
   "author": "Chris Hoage",
   "license": "ISC",

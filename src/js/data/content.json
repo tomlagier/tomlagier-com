@@ -28,8 +28,8 @@
   ],
   "portfolioItems": [
     {
-      "img": "/assets/images/portfolio-modals/vidsketch-full.jpg",
-      "thumbnail": "/assets/images/thumbnails/vidsketch-thumbnail.png",
+      "img": "/assets/images/portfolio-modals/vsketch-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/vsketch-thumbnail.png",
       "heading": "VidSketch",
       "description": "<p>VidSketch is a Chrome App used to capture the user's desktop, add simple text and shape overlays, and transcode the resulting video into a shareable format. It won the <a href='http://www.rosetta.com/' target='_blank'>Rosetta</a> intra-company Winter 2014 hackathon.</p><p>VidSketch is built on <a href='http://marionettejs.com/' target='_blank'>Backbone/Marionette</a>, and uses <strong>WebRTC</strong> with <a href='https://www.webrtc-experiment.com/RecordRTC/' target='_blank'>RecordRTC</a>, <strong>HTML5 Canvas</strong> with <a href='http://fabricjs.com/' target='_blank'>Fabric.js</a>, and <a href='https://www.ffmpeg.org/' target='_blank'>FFMPEG</a> to build a robust and useful interactive desktop capture application.</p>",
       "ctas" : [
