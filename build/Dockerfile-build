@@ -2,4 +2,4 @@ FROM tomlagier/base-project-build:v1
 COPY ./ /build
 RUN apk --update add git
 RUN cd /build && npm install && npm run-script build
-RUN tar -zcvf /build/build.tar.gz -C /build/target .
+RUN tar -zcvf /build/build.tar.gz -C /build/dist .
