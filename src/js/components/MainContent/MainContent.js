@@ -25,10 +25,12 @@ export default class MainContent extends Component {
     let contentState = this.props.currentState.contentActivated ? 'visible' : ''
 
     return (
-      <div className={'content ' + contentState + portfolioWasShown}>
-        <div className={'flipcard-wrapper ' + flipperState}>
-          <MainSide links={this.props.content.links}/>
-          <PortfolioSide content={this.props.content.portfolioItems}/>
+      <div className="site">
+        <div className={'content ' + contentState + portfolioWasShown}>
+          <div className={'flipcard-wrapper ' + flipperState}>
+            <MainSide links={this.props.content.links}/>
+            <PortfolioSide content={this.props.content.portfolioItems}/>
+          </div>
         </div>
         <PortfolioModals items={this.props.content.portfolioItems} activeModal={this.props.currentState.currentModal} />
       </div>

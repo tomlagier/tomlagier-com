@@ -28,48 +28,74 @@
   ],
   "portfolioItems": [
     {
-      "img": "",
-      "thumbnail": "url(/assets/images/thumbnails/vidsketch-thumbnail.png)",
+      "img": "/assets/images/portfolio-modals/vidsketch-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/vidsketch-thumbnail.png",
       "heading": "VidSketch",
-      "description": "Rubics cube full description here",
-      "link": "#",
-      "linkText": "Some link text",
+      "description": "<p>VidSketch is a Chrome App used to capture the user's desktop, add simple text and shape overlays, and transcode the resulting video into a shareable format. It won the <a href='http://www.rosetta.com/' target='_blank'>Rosetta</a> intra-company Winter 2014 hackathon.</p><p>VidSketch is built on <a href='http://marionettejs.com/' target='_blank'>Backbone/Marionette</a>, and uses <strong>WebRTC</strong> with <a href='https://www.webrtc-experiment.com/RecordRTC/' target='_blank'>RecordRTC</a>, <strong>HTML5 Canvas</strong> with <a href='http://fabricjs.com/' target='_blank'>Fabric.js</a>, and <a href='https://www.ffmpeg.org/' target='_blank'>FFMPEG</a> to build a robust and useful interactive desktop capture application.</p>",
+      "ctas" : [
+        {
+          "link": "https://chrome.google.com/webstore/detail/vidsketch/pmfeakipkeenfhglebfbbfiopaghdodd",
+          "linkText": "Chrome Web Store"
+        }, {
+          "link": "https://github.com/tomlagier/vidsketch",
+          "linkText": "GitHub"
+        }
+      ],
       "className": "vidsketch"
     },
     {
-      "img": "",
-      "thumbnail": "url(/assets/images/thumbnails/rubics-thumbnail.jpg)",
+      "img": "/assets/images/portfolio-modals/cube-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/rubics-thumbnail.jpg",
       "heading": "Rubics Cube",
-      "description": "First project description goes here",
-      "link": "#",
-      "linkText": "Some link text",
+      "description": "<p>In the fall of 2015 I caught the <strong>WebGL</strong> bug and had to take a stab at doing some basic 3D programming. I created an interactive Rubics cube from scratch, using a homebrewed framework built on top of <a href='http://threejs.org/' target='_blank'>ThreeJS</a>.</p><p>I had a lot of learning to do, both about 3D modelling (I used <a href='https://www.blender.org/' target='_blank'>Blender</a>) and about spatial geometry. It took me a few passes, but I got the event system robust and extensible, and the game logic correctly implemented.</p>",
+      "ctas": [
+        {
+          "link": "http://tomlagier.com/rubics-cube",
+          "linkText": "Check it out"
+        },
+        {
+          "link": "https://github.com/tomlagier/threejs-rubics-cube",
+          "linkText": "GitHub"
+        }
+      ],
       "className": "rubics"
     },
     {
-      "img": "",
-      "thumbnail": "url(/assets/images/thumbnails/torrentula-thumbnail.png)",
+      "img": "/assets/images/portfolio-modals/torrentula-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/torrentula-thumbnail.png",
       "heading": "Torrentula",
-      "description": "First project description goes here",
-      "link": "#",
-      "linkText": "Some link text",
+      "description": "<p>Torrentula was a project designed to ease the pain of transferring large files between colleagues without relying on a central file store. It won the Summer 2015 <a href='http://www.rosetta.com' target='_blank'>Rosetta</a> hackathon. I was the main UI developer and assisted with business logic and final presentation.</p><p>The project was built on <a href='https://facebook.github.io/react/' target='_blank'>React</a> and <a href='https://github.com/goatslacker/alt' target='_blank'>Alt</a>. Our team leveraged <a href='https://github.com/feross/webtorrent' target='_blank'>WebTorrents</a> to manage peer-to-peer transfers, but also maintained a <a href='' target='_blank'>Firebase</a> central registry of files to allow for a central seed server.</p>",
+      "ctas": [
+        {
+          "link": "https://github.com/RosettaLabs/Torrentula",
+          "linkText": "GitHub"
+        }
+      ],
       "className": "torrentula"
     },
     {
-      "img": "",
-      "thumbnail": "url(/assets/images/thumbnails/linkbee-thumbnail.png)",
+      "img": "/assets/images/portfolio-modals/linkbee-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/linkbee-thumbnail.png",
       "heading": "LinkBee",
-      "description": "First project description goes here",
-      "link": "#",
-      "linkText": "Some link text",
+      "description": "<p>LinkBee was a collaboration with the talented designers at <a href='http://www.studiogood.com/' target='_blank'>StudioGood</a>, to create a fresh, bright, dynamic site for the upcoming launch of a smart lightbulb startup.</p><p>This was a great opportunity to work with <strong>SVGs</strong> - they were the perfect solution for most of the graphics on the page. I used <a href='http://videojs.com/' target='_blank'>VideoJS</a> for the HTML5 video player. The level of interactivity brings an exciting product to life, and was really fun to build.</p>",
+      "ctas": [{
+        "link": "http://www.linkbee.com",
+        "linkText": "Check it out"
+      },{
+        "link": "https://github.com/tomlagier/linkbee",
+        "linkText": "Github"
+      }],
       "className": "linkbee"
     }
     ,{
-      "img": "",
-      "thumbnail": "url(/assets/images/thumbnails/road-trip-thumbnail.png)",
+      "img": "/assets/images/portfolio-modals/aldi-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/road-trip-thumbnail.png",
       "heading": "ALDI Road Trip",
-      "description": "First project description goes here",
-      "link": "#",
-      "linkText": "Some link text",
+      "description": "<p>This was another collaboration with the designers at <a href='http://www.studiogood.com/' target='_blank'>StudioGood</a>, to launch an interactive graphic to promote ALDI products alongside the launch of their blog refresh (also authored by me).</p><p>The primary technology used was <strong>SVG</strong>, along with smart <strong>responsive development</strong> practices. The overall result was a fun graphic and pretty page that looked great across all devices and browsers.</p>",
+      "ctas": [{
+        "link": "https://blog.aldi.us/aldi-summer-road-trip/",
+        "linkText": "Check it out"
+        }],
       "className": "aldi"
     }
   ]

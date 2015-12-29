@@ -5,7 +5,7 @@ $shadow-color: rgba(0,0,0,0.1);
   max-width: 580px;
   margin: 0 auto;
   opacity: 0;
-  transform: translate3d(-50%, -65%, 0);
+  transform: translate3d(-50%, -60%, 0);
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
   perspective: 2000;
   text-align: center;
@@ -15,7 +15,7 @@ $shadow-color: rgba(0,0,0,0.1);
 
 
   &.visible {
-    transform: translate3d(-50%, -55%, 0);
+    transform: translate3d(-50%, -50%, 0);
     opacity: 1;
   }
 

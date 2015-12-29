@@ -3,11 +3,19 @@
 @import 'fonts';
 @import 'animations';
 @import 'typography';
+@import 'colors';
 
 * {
   box-sizing: border-box;
 }
 
-#app {
+a {
+  text-decoration: none;
+  color: $green;
+  font-weight: bold;
+  transition: color 0.3s ease-out;
 
+  &:hover {
+    color: darken($green, 15%);
+  }
 }
