@@ -3,6 +3,7 @@ $shadow-color: rgba(0,0,0,0.1);
 
 .content {
   max-width: 580px;
+  width: 100%;
   margin: 0 auto;
   opacity: 0;
   transform: translate3d(-50%, -60%, 0);
@@ -19,6 +20,17 @@ $shadow-color: rgba(0,0,0,0.1);
     opacity: 1;
   }
 
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    transform: none;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &.visible {
+      transform: none;
+    }
+  }
 }
 
 .profile-image-wrapper {
@@ -59,11 +71,20 @@ $shadow-color: rgba(0,0,0,0.1);
   &.portfolio-side-visible {
     transform: rotateY(-180deg);
   }
+
+  @media screen and (max-width: 767px) {
+    box-shadow: none;
+    border: none;
+  }
 }
 
 .main-side, .portfolio-side {
   backface-visibility: hidden;
   padding: 45px;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
 }
 
 .main-side {

@@ -26,6 +26,12 @@ export default class PortfolioModals extends Component {
 
     let modalIsActive = this.props.activeModal === -1 ? '' : 'active-modal'
 
+    if ((this.props.activeModal !== -1) && ($(window).width() < 980)) {
+      $('body').addClass('modal-active')
+    } else {
+      $('body').removeClass('modal-active')
+    }
+
     return (
       <div className={'portfolio-modals ' + modalIsActive} onClick={this.maybeRemoveModal}>
         {portfolioModals}

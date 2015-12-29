@@ -26,14 +26,16 @@ export default class PortfolioModal extends Component {
 
     return (
       <div className={'portfolio-modal ' + className} data-index={this.props.index} >
-        <div className="close-button icon-android-close" onClick={this.toggleModal}></div>
-        <div className="image-wrapper">
-          <div className="portfolio-image" style={style}></div>
-        </div>
-        <div className="text-wrapper">
-          <h3>{this.props.data.heading}</h3>
-          <div className="description" dangerouslySetInnerHTML={{__html:this.props.data.description}} />
-          <div className="ctas">{ctas}</div>
+        <div className="portfolio-modal-inner">
+          <div className="close-button icon-android-close" onClick={this.toggleModal}></div>
+          <div className="image-wrapper">
+            <div className="portfolio-image" style={style}></div>
+          </div>
+          <div className="text-wrapper">
+            <h3>{this.props.data.heading}</h3>
+            <div className="description" dangerouslySetInnerHTML={{__html:this.props.data.description}} />
+            <div className="ctas">{ctas}</div>
+          </div>
         </div>
       </div>
     )

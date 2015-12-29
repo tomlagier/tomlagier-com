@@ -12,14 +12,30 @@
   pointer-events: none;
   padding: 30px;
 
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    top: 0;
+    left: 0;
+  }
+
   &:nth-child(even) {
     transform: rotateZ(15deg) translate3d(-50%, -50%, 0);
     transform-origin: 100% 100% 0;
+
+    @media screen and (max-width: 767px) {
+      transform: rotateZ(15deg) translate3d(0, 0, 0);
+    }
   }
 
   &:nth-child(odd) {
     transform: rotateZ(-15deg) translate3d(-50%, -50%, 0);
     transform-origin: -100% 100% 0;
+
+    @media screen and (max-width: 767px) {
+      transform: rotateZ(-15deg) translate3d(0, 0, 0);
+    }
   }
 
   &.active {
@@ -28,6 +44,10 @@
     transform: rotateZ(0deg) translate3d(-50%, -50%, 0);
     transition: transform 0.4s ease-out, opacity 0.4s ease-out, z-index 0s 0s;
     pointer-events: auto;
+
+    @media screen and (max-width: 767px) {
+      transform: rotateZ(0deg) translate3d(0, 0, 0);
+    }
   }
 
   .close-button {
@@ -95,6 +115,19 @@
         background: transparent;
         color: $green;
       }
+
+      @media screen and (max-width: 440px) {
+        display: block;
+        margin: 0 auto;
+
+        &:first-child {
+          margin-bottom: 10px;
+        }
+
+        &:last-child {
+          margin-right: auto;
+        }
+      }
     }
   }
 
@@ -102,6 +135,7 @@
     .portfolio-image {
       background-repeat: no-repeat;
       background-position: center 180%;
+      background-size: 75%;
     }
   }
 
