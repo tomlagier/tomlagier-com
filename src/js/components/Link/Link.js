@@ -4,6 +4,7 @@ import store from '../../store'
 import './Link.scss'
 
 function portfolioFlip(evt) {
+  evt.preventDefault()
   store.dispatch({
     type: 'TOGGLE_PORTFOLIO'
   })
