@@ -44,23 +44,6 @@
       "className": "vidsketch"
     },
     {
-      "img": "/assets/images/portfolio-modals/cube-full.jpg",
-      "thumbnail": "/assets/images/thumbnails/rubics-thumbnail.jpg",
-      "heading": "Rubics Cube",
-      "description": "<p>In the fall of 2015 I caught the <strong>WebGL</strong> bug and had to take a stab at doing some basic 3D programming. I created an interactive Rubics cube from scratch, using a homebrewed framework built on top of <a href='http://threejs.org/' target='_blank'>ThreeJS</a>.</p><p>I had a lot of learning to do, both about 3D modelling (I used <a href='https://www.blender.org/' target='_blank'>Blender</a>) and about spatial geometry. It took me a few passes, but I got the event system robust and extensible, and the game logic correctly implemented.</p>",
-      "ctas": [
-        {
-          "link": "http://tomlagier.com/rubics-cube",
-          "linkText": "Check it out"
-        },
-        {
-          "link": "https://github.com/tomlagier/threejs-rubics-cube",
-          "linkText": "GitHub"
-        }
-      ],
-      "className": "rubics"
-    },
-    {
       "img": "/assets/images/portfolio-modals/torrentula-full.jpg",
       "thumbnail": "/assets/images/thumbnails/torrentula-thumbnail.png",
       "heading": "Torrentula",
@@ -86,8 +69,25 @@
         "linkText": "Github"
       }],
       "className": "linkbee"
-    }
-    ,{
+    },
+    {
+      "img": "/assets/images/portfolio-modals/cube-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/rubics-thumbnail.jpg",
+      "heading": "Rubik's Cube",
+      "description": "<p>In the fall of 2015 I caught the <strong>WebGL</strong> bug and had to take a stab at doing some basic 3D programming. I created an interactive Rubik's cube from scratch, using a homebrewed framework built on top of <a href='http://threejs.org/' target='_blank'>ThreeJS</a>.</p><p>I had a lot of learning to do, both about 3D modelling (I used <a href='https://www.blender.org/' target='_blank'>Blender</a>) and about spatial geometry. It took me a few passes, but I got the event system robust and extensible, and the game logic correctly implemented.</p>",
+      "ctas": [
+        {
+          "link": "http://tomlagier.com/rubiks-cube",
+          "linkText": "Check it out"
+        },
+        {
+          "link": "https://github.com/tomlagier/threejs-rubics-cube",
+          "linkText": "GitHub"
+        }
+      ],
+      "className": "rubics"
+    },
+    {
       "img": "/assets/images/portfolio-modals/aldi-full.jpg",
       "thumbnail": "/assets/images/thumbnails/road-trip-thumbnail.png",
       "heading": "ALDI Road Trip",

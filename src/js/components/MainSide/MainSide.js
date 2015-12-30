@@ -26,7 +26,7 @@ export default class MainSide extends Component {
         <h1>Tom Lagier</h1>
         <h2>Javascript & Front-End Developer</h2>
         <p>I'm a Javascript developer with a passion for next-generation web technologies. I love all elements of interaction design and spend my free time working on projects that leverage WebGL, Canvas, SVG, and video to make the web come&nbsp;alive.</p>
-        <p>I'm always looking for exciting opportunities to build beautiful, interactive pages and applications. <a className="portfolio-link" onClick={this.togglePortfolio}>Take a look at my portfolio!</a></p>
+        <a className="portfolio-link" onClick={this.togglePortfolio}>Take a look at my portfolio!</a>
         <div className="links">
           {links}
         </div>

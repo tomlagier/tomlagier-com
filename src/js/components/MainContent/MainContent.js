@@ -3,8 +3,21 @@ import MainSide from '../MainSide'
 import PortfolioSide from '../PortfolioSide'
 import PortfolioModals from '../PortfolioModals'
 import store from '../../store'
+import $ from 'jquery'
 
 import './MainContent.scss'
+
+let currentState
+function scrollTop() {
+  let prevState = currentState
+  currentState = store.getState()
+
+  if (prevState && (prevState.portfolioVisible !== currentState.portfolioVisible)) {
+    $('html,body').animate({scrollTop: 0})
+  }
+}
+
+store.subscribe(scrollTop)
 
 export default class MainContent extends Component {
 
