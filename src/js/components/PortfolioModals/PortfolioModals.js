@@ -1,18 +1,16 @@
 import React, { Component, propTypes } from 'react'
 import PortfolioModal from '../PortfolioModal'
-import store from '../../store';
-import $ from 'jquery';
+import store from '../../store'
+import $ from 'jquery'
+import {pushPath} from 'redux-simple-router'
 
 import './PortfolioModals.scss'
 
 export default class PortfolioModals extends Component {
   maybeRemoveModal(evt) {
 
-    if(!$(evt.target).closest('.portfolio-modal.active').length) {
-      store.dispatch({
-        type: 'TOGGLE_MODAL',
-        modal: -1
-      })
+    if (!$(evt.target).closest('.portfolio-modal.active').length) {
+      store.dispatch(pushPath('/portfolio'))
     }
   }
 
@@ -20,7 +18,7 @@ export default class PortfolioModals extends Component {
     const portfolioModals = []
     this.props.items.forEach( (portfolioModal, ind) => {
       portfolioModals.push(
-        <PortfolioModal key={'portfolio-modal-' + ind} data={portfolioModal} index={ind} activeModal={this.props.activeModal}/>
+        <PortfolioModal key={'portfolio-modal-' + ind} data={portfolioModal} slug={portfolioModal.slug} activeModal={this.props.activeModal}/>
       )
     })
 

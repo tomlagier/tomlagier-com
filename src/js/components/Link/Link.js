@@ -1,13 +1,12 @@
 import React, { Component, propTypes } from 'react'
 import store from '../../store'
+import { pushPath } from 'redux-simple-router'
 
 import './Link.scss'
 
 function portfolioFlip(evt) {
   evt.preventDefault()
-  store.dispatch({
-    type: 'TOGGLE_PORTFOLIO'
-  })
+  store.dispatch(pushPath('/portfolio'))
 }
 
 export default class Link extends Component {

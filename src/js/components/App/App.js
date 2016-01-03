@@ -7,10 +7,10 @@ import './App.scss'
 
 class App extends Component {
   render() {
-    const {currentState} = this.props
+    const {currentState, route} = this.props
     return (
       <div className="container">
-        <MainContent content={content} currentState={currentState} />
+        <MainContent content={content} currentState={currentState} route={route} />
       </div>
     )
   }
@@ -18,7 +18,8 @@ class App extends Component {
 
 function select(state) {
   return {
-    currentState: state
+    currentState: state.appState,
+    route: state.routing
   }
 }
 
@@ -28,7 +29,8 @@ App.propTypes = {
     portfolioVisible: React.PropTypes.bool,
     portfolioTriggered: React.PropTypes.bool,
     currentModal: React.PropTypes.number
-  }).isRequired
+  }).isRequired,
+  route: React.PropTypes.object.isRequired
 }
 
 export default connect(select)(App)

@@ -28,6 +28,7 @@
   ],
   "portfolioItems": [
     {
+      "slug": "vidsketch",
       "img": "/assets/images/portfolio-modals/vsketch-full.jpg",
       "thumbnail": "/assets/images/thumbnails/vsketch-thumbnail.png",
       "heading": "VidSketch",
@@ -44,6 +45,7 @@
       "className": "vidsketch"
     },
     {
+      "slug": "torrentula",
       "img": "/assets/images/portfolio-modals/torrentula-full.jpg",
       "thumbnail": "/assets/images/thumbnails/torrentula-thumbnail.png",
       "heading": "Torrentula",
@@ -57,6 +59,7 @@
       "className": "torrentula"
     },
     {
+      "slug": "linkbee",
       "img": "/assets/images/portfolio-modals/linkbee-full.jpg",
       "thumbnail": "/assets/images/thumbnails/linkbee-thumbnail.png",
       "heading": "LinkBee",
@@ -71,6 +74,7 @@
       "className": "linkbee"
     },
     {
+      "slug": "rubiks-cube",
       "img": "/assets/images/portfolio-modals/cube-full.jpg",
       "thumbnail": "/assets/images/thumbnails/rubics-thumbnail.jpg",
       "heading": "Rubik's Cube",
@@ -88,6 +92,7 @@
       "className": "rubics"
     },
     {
+      "slug": "aldi-road-trip",
       "img": "/assets/images/portfolio-modals/aldi-full.jpg",
       "thumbnail": "/assets/images/thumbnails/road-trip-thumbnail.png",
       "heading": "ALDI Road Trip",

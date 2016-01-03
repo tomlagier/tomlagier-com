@@ -1,17 +1,15 @@
 import React, { Component, propTypes } from 'react'
 import store from '../../store'
+import {pushPath} from 'redux-simple-router'
 
 import './PortfolioItem.scss'
 
 export default class PortfolioItem extends Component {
   render() {
     let toggleModal = (evt) => {
-      const index = parseInt(evt.currentTarget.getAttribute('data-index'), 10)
+      const slug = evt.currentTarget.getAttribute('data-slug')
 
-      store.dispatch({
-        type: 'TOGGLE_MODAL',
-        modal: index
-      })
+      store.dispatch(pushPath('/portfolio/' + slug))
     }
 
     let animDelay = 1100 + (this.props.index) * 150
@@ -24,7 +22,7 @@ export default class PortfolioItem extends Component {
 
     return (
       <div className={'portfolio-item-outer ' + this.props.data.className}>
-        <div className="portfolio-item" style={style} onClick={toggleModal} data-index={this.props.index}>
+        <div className="portfolio-item" style={style} onClick={toggleModal} data-slug={this.props.slug}>
           <h4>{this.props.data.heading}</h4>
         </div>
       </div>
@@ -42,5 +40,6 @@ PortfolioItem.propTypes = {
     linkText: React.PropTypes.string,
     className: React.PropTypes.strng
   }).isRequired,
-  index: React.PropTypes.number.isRequired
+  index: React.PropTypes.number.isRequired,
+  slug: React.PropTypes.string.isRequired
 }

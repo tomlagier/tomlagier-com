@@ -28,16 +28,19 @@
     "gulp-eslint": "^1.0.0",
     "gulp-if": "^1.2.5",
     "gulp-util": "^3.0.2",
+    "history": "^1.17.0",
     "jquery": "^2.1.4",
     "json-loader": "^0.5.4",
     "lodash.merge": "^3.3.2",
     "node-sass": "^3.3.3",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-router": "^1.0.3",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.1.0",
     "redux-devtools": "^2.1.5",
+    "redux-simple-router": "^1.0.2",
     "run-sequence": "^1.1.4",
     "sass-loader": "^2.0.0",
     "style-loader": "^0.12.4",
@@ -53,5 +56,5 @@
     "react-redux": "^4.0.0",
     "redux": "^3.0.4"
   },
-  "hostPort" : 8010
+  "hostPort": 8010
 }

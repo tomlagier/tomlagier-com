@@ -1,14 +1,13 @@
 import React, { Component, propTypes } from 'react'
 import Link from '../Link'
 import store from '../../store'
+import { pushPath } from 'redux-simple-router'
 
 import './MainSide.scss'
 
 export default class MainSide extends Component {
   togglePortfolio() {
-    store.dispatch({
-      type: 'TOGGLE_PORTFOLIO'
-    })
+    store.dispatch(pushPath('/portfolio'))
   }
 
   render() {
