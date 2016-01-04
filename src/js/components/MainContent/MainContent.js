@@ -33,7 +33,7 @@ export default class MainContent extends Component {
 
     let flipperState = this.props.route.path.indexOf('/portfolio') !== -1 ? 'portfolio-side-visible' : 'main-side-visible'
 
-    let portfolioWasShown = this.props.currentState.portfolioTriggered ? ' portfolio-triggered' : ''
+    let portfolioWasShown = (this.props.currentState.portfolioTriggered && this.props.currentState.contentActivated) ? ' portfolio-triggered' : ''
 
     let contentState = this.props.currentState.contentActivated ? 'visible' : ''
 
