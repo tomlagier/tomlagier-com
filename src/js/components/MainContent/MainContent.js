@@ -37,6 +37,8 @@ export default class MainContent extends Component {
 
     let contentState = this.props.currentState.contentActivated ? 'visible' : ''
 
+    console.log(this.props.currentState)
+
     return (
       <div className="site">
         <div className={'content ' + contentState + portfolioWasShown}>
@@ -60,7 +62,7 @@ MainContent.propTypes = {
     contentActivated: React.PropTypes.bool,
     portfolioVisible: React.PropTypes.bool,
     portfolioTriggered: React.PropTypes.bool,
-    currentModal: React.PropTypes.number
+    currentModal: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number])
   }).isRequired,
   route: React.PropTypes.object.isRequired
 }

@@ -40,5 +40,5 @@ export default class PortfolioModals extends Component {
 
 PortfolioModals.propTypes = {
   items: React.PropTypes.array.isRequired,
-  activeModal: React.PropTypes.number.isRequired
+  activeModal: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number])
 }

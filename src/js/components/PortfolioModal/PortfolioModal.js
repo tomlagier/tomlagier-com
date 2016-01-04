@@ -11,7 +11,9 @@ export default class PortfolioModal extends Component {
   }
 
   render() {
-    let className = `${this.props.data.className} ${(this.props.activeModal === this.props.slug) ? 'active' : ''}`;
+    let className = `${this.props.data.className} ${(this.props.activeModal === this.props.slug) ? 'active' : ''}`
+
+    console.log(this.props.activeModal === this.props.slug)
 
     let style = {
       backgroundImage: `url(${this.props.data.img})`
@@ -50,5 +52,5 @@ PortfolioModal.propTypes = {
     ctas: React.PropTypes.array
   }).isRequired,
   slug: React.PropTypes.string.isRequired,
-  activeModal: React.PropTypes.number.isRequired,
+  activeModal: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]),
 }
