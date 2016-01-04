@@ -13,7 +13,7 @@ function checkPortfolioState(path, state) {
 }
 
 function checkPortfolioModalState(path, state) {
-  let modalRegex = new RegExp('\/portfolio\/(.*)')
+  let modalRegex = new RegExp('\/portfolio\/([^/]*)(\/)?')
 
   const matches = modalRegex.exec(path)
 
