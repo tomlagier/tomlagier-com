@@ -1,6 +1,8 @@
 import {createStore, combineReducers} from 'redux'
-import initialState from '../data/state'
+import defaultState from '../data/state'
 import { routeReducer, UPDATE_PATH } from 'redux-simple-router'
+
+let initialState = Object.assign({}, defaultState)
 
 function checkPortfolioState(path, state) {
   if (path.indexOf('/portfolio') !== -1 ) {
