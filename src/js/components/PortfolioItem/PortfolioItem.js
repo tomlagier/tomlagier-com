@@ -12,7 +12,7 @@ export default class PortfolioItem extends Component {
       store.dispatch(pushPath('/portfolio/' + slug))
     }
 
-    let animDelay = 1100 + (this.props.index) * 150
+    let animDelay = 800 + (this.props.index) * 150
 
     let style = {
       backgroundImage: `url(${this.props.data.thumbnail})`,

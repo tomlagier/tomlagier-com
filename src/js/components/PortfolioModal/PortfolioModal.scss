@@ -7,7 +7,7 @@
   width: 580px;
   height: 671px;
   background: white;
-  transition: transform 0.4s ease-out, opacity 0.4s ease-out, z-index 0s 0.4s;
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out, z-index 0s 0.4s;
   z-index: -1;
   pointer-events: none;
   padding: 30px;
@@ -21,20 +21,20 @@
   }
 
   &:nth-child(even) {
-    transform: rotateZ(15deg) translate3d(-50%, -50%, 0);
+    transform: rotateZ(10deg) translate3d(-50%, -50%, 0);
     transform-origin: 100% 100% 0;
 
     @media screen and (max-width: 767px) {
-      transform: rotateZ(15deg) translate3d(0, 0, 0);
+      transform: rotateZ(10deg) translate3d(0, 0, 0);
     }
   }
 
   &:nth-child(odd) {
-    transform: rotateZ(-15deg) translate3d(-50%, -50%, 0);
+    transform: rotateZ(-10deg) translate3d(-50%, -50%, 0);
     transform-origin: -100% 100% 0;
 
     @media screen and (max-width: 767px) {
-      transform: rotateZ(-15deg) translate3d(0, 0, 0);
+      transform: rotateZ(-10deg) translate3d(0, 0, 0);
     }
   }
 
