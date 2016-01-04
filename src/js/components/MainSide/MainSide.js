@@ -20,7 +20,7 @@ export default class MainSide extends Component {
     return (
       <div className="main-side">
         <div className="profile-image-wrapper">
-          <img src="assets/images/profile-picture.jpg" />
+          <img src="/assets/images/profile-picture.jpg" />
         </div>
         <h1>Tom Lagier</h1>
         <h2>Javascript & Front-End Developer</h2>
