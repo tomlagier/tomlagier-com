@@ -27,16 +27,15 @@ const deepMergeClone = (...sources) => merge({}, ...sources, (a, b) => {
 })
 
 const paths = {
-  src:   ['./src/**', '!./src/js{,/**}', '!./src/scss{,/**}'],
-  js:    './src/js',
-  scss:  './src/scss',
+  src: ['./src/**', '!./src/js{,/**}', '!./src/scss{,/**}'],
+  js: './src/js',
+  scss: './src/scss',
   entry: './src/js/app.js',
   output: 'assets',
-  dist:   './dist'
+  dist: './dist'
 }
 
 function generateWebpackConfig(env) {
-
   const webpackBaseConfig = {
     entry: [paths.entry],
     output: {
@@ -88,7 +87,7 @@ function generateWebpackConfig(env) {
             }
           ]
         }
-      })
+      });
       return webpackDevConfig
     case 'production':
     default:

@@ -18,7 +18,7 @@ export default class PortfolioSide extends Component {
         <div className="back-button icon-android-arrow-back" onClick={portfolioFlip}></div>
         <div className="upper-text">
           <h3>I am a JavaScript and front-end developer with full-stack experience that loves to work with web graphics.</h3>
-          <p>Creating beautiful interactive experiences is my forté - whether it be by crafting simple animations with CSS, SVG, and canvas, involving the viewer using WebRTC and HTML5 video, or creating full-blown immersive 3D with WebGL and ThreeJS.</p>
+          <p>Creating beautiful interactive experiences is my forté - whether it be by crafting simple animations with CSS, SVG, and canvas, involving the viewer using WebRTC and HTML5 video, or creating full-blown immersive 3D with WebGL and stackgl or ThreeJS.</p>
         </div>
         <PortfolioArea items={this.props.content} />
       </div>

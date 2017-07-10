@@ -151,4 +151,10 @@
       background-position: center top;
     }
   }
+
+  &.heapviz {
+    .portfolio-image {
+      background-size: cover;
+    }
+  }
 }

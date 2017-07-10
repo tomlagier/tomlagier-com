@@ -28,6 +28,42 @@
   ],
   "portfolioItems": [
     {
+      "slug": "heapviz",
+      "img": "/assets/images/portfolio-modals/heapviz-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/heapviz.png",
+      "heading": "HeapViz",
+      "description": "<p>My latest personal project has been a visualization engine for Chrome memory profiles. I published an article series on the <a href='https://hackernoon.com/a-tale-of-javascript-performance-61c282f89f2a' target='_blank'>making of HeapViz</a>. Chrome heap profiles are very large, and I needed to use all of the performance-enhancing tools at my disposal to effectively render them, including <strong>WebGL</strong>, <strong>WebAssembly</strong>, and <strong>WebWorkers</strong>. Building HeapViz has been the challenge of my career, but I have learned and grown an incredible amount from the experienve.</p>",
+      "ctas": [
+        {
+          "link": "http://heapviz.com",
+          "linkText": "Check it out"
+        },
+        {
+          "link": "https://github.com/tomlagier/heapviz",
+          "linkText": "GitHub"
+        }
+      ],
+      "className": "heapviz"
+    },
+    {
+      "slug": "rubiks-cube",
+      "img": "/assets/images/portfolio-modals/cube-full.jpg",
+      "thumbnail": "/assets/images/thumbnails/rubics-thumbnail.jpg",
+      "heading": "Rubic's Cube",
+      "description": "<p>In the fall of 2015 I caught the <strong>WebGL</strong> bug and had to take a stab at doing some basic 3D programming. I created an interactive Rubic's cube from scratch, using a homebrewed framework built on top of <a href='http://threejs.org/' target='_blank'>ThreeJS</a>.</p><p>I had a lot of learning to do, both about 3D modelling (I used <a href='https://www.blender.org/' target='_blank'>Blender</a>) and about spatial geometry. It took me a few passes, but I got the event system robust and extensible, and the game logic correctly implemented.</p>",
+      "ctas": [
+        {
+          "link": "http://tomlagier.com/rubiks-cube",
+          "linkText": "Check it out"
+        },
+        {
+          "link": "https://github.com/tomlagier/threejs-rubics-cube",
+          "linkText": "GitHub"
+        }
+      ],
+      "className": "rubics"
+    },
+    {
       "slug": "vidsketch",
       "img": "/assets/images/portfolio-modals/vsketch-full.jpg",
       "thumbnail": "/assets/images/thumbnails/vsketch-thumbnail.png",
@@ -72,24 +108,6 @@
         "linkText": "Github"
       }],
       "className": "linkbee"
-    },
-    {
-      "slug": "rubiks-cube",
-      "img": "/assets/images/portfolio-modals/cube-full.jpg",
-      "thumbnail": "/assets/images/thumbnails/rubics-thumbnail.jpg",
-      "heading": "Rubik's Cube",
-      "description": "<p>In the fall of 2015 I caught the <strong>WebGL</strong> bug and had to take a stab at doing some basic 3D programming. I created an interactive Rubik's cube from scratch, using a homebrewed framework built on top of <a href='http://threejs.org/' target='_blank'>ThreeJS</a>.</p><p>I had a lot of learning to do, both about 3D modelling (I used <a href='https://www.blender.org/' target='_blank'>Blender</a>) and about spatial geometry. It took me a few passes, but I got the event system robust and extensible, and the game logic correctly implemented.</p>",
-      "ctas": [
-        {
-          "link": "http://tomlagier.com/rubiks-cube",
-          "linkText": "Check it out"
-        },
-        {
-          "link": "https://github.com/tomlagier/threejs-rubics-cube",
-          "linkText": "GitHub"
-        }
-      ],
-      "className": "rubics"
     },
     {
       "slug": "aldi-road-trip",
