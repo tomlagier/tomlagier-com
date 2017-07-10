@@ -1,7 +1,7 @@
 FROM mhart/alpine-node
 MAINTAINER lagierta@gmail.com
 RUN apk --update add nginx
-RUN mkdir -p /tmp/nginx && mkdir /www
+RUN mkdir -p /tmp/nginx && mkdir /run/nginx && mkdir /www
 COPY nginx.conf /etc/nginx/
 COPY build.tar.gz /www/
 RUN tar -zxvf /www/build.tar.gz -C /www
