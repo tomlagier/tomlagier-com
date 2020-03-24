@@ -17,13 +17,18 @@
     },
     {
       "className": "linkedin icon-social-linkedin",
-      "link": "https://www.linkedin.com/in/thomaslagier",
+      "link": "https://www.linkedin.com/in/tomlagier",
       "text": "LinkedIn"
     },
     {
       "className": "twitter icon-social-twitter",
       "link": "https://twitter.com/LagierGear",
       "text": "Twitter"
+    },
+    {
+      "className": "blog icon-laptop",
+      "link": "https://medium.com/@tomlagier",
+      "text": "Blog"
     }
   ],
   "portfolioItems": [
@@ -44,6 +49,34 @@
         }
       ],
       "className": "heapviz"
+    },
+    {
+      "slug": "storysystem",
+      "img": "/assets/images/portfolio-modals/storysystem-full.png",
+      "thumbnail": "/assets/images/thumbnails/storysystem-thumbnail.png",
+      "heading": "StorySystem",
+      "description": "<p>In early 2019, I decided to create a tabletop role-playing game. I built the web presence for the game from scratch, using a bunch of web technologies to accomplish article editing and upload, image upload, and scalable serving.</p>",
+      "ctas": [
+        {
+          "link": "http://storysystem.games",
+          "linkText": "Check it out"
+        }
+      ],
+      "className": "storysystem"
+    },
+    {
+      "slug": "tomandmary-travel",
+      "img": "/assets/images/portfolio-modals/tomandmary-full.png",
+      "thumbnail": "/assets/images/thumbnails/tomandmary-thumbnail.png",
+      "heading": "T&M Travel",
+      "description": "<p>My wife and I are spending most of 2020 traveling the world. This blog documents our travels, and shows off our design and development skills.</p>",
+      "ctas": [
+        {
+          "link": "http://tomandmary.travel",
+          "linkText": "Check it out"
+        }
+      ],
+      "className": "tomandmary-travel"
     },
     {
       "slug": "rubiks-cube",
@@ -79,35 +112,6 @@
         }
       ],
       "className": "vidsketch"
-    },
-    {
-      "slug": "torrentula",
-      "img": "/assets/images/portfolio-modals/torrentula-full.jpg",
-      "thumbnail": "/assets/images/thumbnails/torrentula-thumbnail.png",
-      "heading": "Torrentula",
-      "description": "<p>Torrentula was a project designed to ease the pain of transferring large files between colleagues without relying on a central file store. It won the Summer 2015 <a href='http://www.rosetta.com' target='_blank'>Rosetta</a> hackathon. I was the main UI developer and assisted with business logic and final presentation.</p><p>The project was built on <a href='https://facebook.github.io/react/' target='_blank'>React</a> and <a href='https://github.com/goatslacker/alt' target='_blank'>Alt</a>. Our team leveraged <a href='https://github.com/feross/webtorrent' target='_blank'>WebTorrents</a> to manage peer-to-peer transfers, but also maintained a <a href='' target='_blank'>Firebase</a> central registry of files to allow for a central seed server.</p>",
-      "ctas": [
-        {
-          "link": "https://github.com/RosettaLabs/Torrentula",
-          "linkText": "GitHub"
-        }
-      ],
-      "className": "torrentula"
-    },
-    {
-      "slug": "linkbee",
-      "img": "/assets/images/portfolio-modals/linkbee-full.jpg",
-      "thumbnail": "/assets/images/thumbnails/linkbee-thumbnail.png",
-      "heading": "LinkBee",
-      "description": "<p>LinkBee was a collaboration with the talented designers at <a href='http://www.studiogood.com/' target='_blank'>StudioGood</a>, to create a fresh, bright, dynamic site for the upcoming launch of a smart lightbulb startup.</p><p>This was a great opportunity to work with <strong>SVGs</strong> - they were the perfect solution for most of the graphics on the page. I used <a href='http://videojs.com/' target='_blank'>VideoJS</a> for the HTML5 video player. The level of interactivity brings an exciting product to life, and was really fun to build.</p>",
-      "ctas": [{
-        "link": "http://www.linkbee.com",
-        "linkText": "Check it out"
-      },{
-        "link": "https://github.com/tomlagier/linkbee",
-        "linkText": "Github"
-      }],
-      "className": "linkbee"
     },
     {
       "slug": "aldi-road-trip",
